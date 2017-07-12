@@ -21,7 +21,7 @@ async function main() {
     await addChaptersToZip(mainZip, inputFolder, folders);
 
     console.log('Writing to disk...');
-    await writeZipToDisk(mainZip, path.basename(inputFolder) + '.zip');
+    await writeZipToDisk(mainZip, path.basename(inputFolder) + '.cbc');
 }
 
 async function getChapterNames(inputFolder) {
